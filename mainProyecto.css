@@ -1,0 +1,1029 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Open+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 70px;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(ellipse at top, #006e89, transparent),
+            radial-gradient(ellipse at bottom, #11167d, transparent);
+}
+
+header {
+    /* background-color: rgb(11, 167, 206);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-right: -0.5rem;
+    margin-top: -0.5rem; 
+    position: fixed; */
+    background-color: rgb(11, 167, 206);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../proyecto/img/akira-hojo-_86u_Y0oAaM-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    margin-top: -70px;
+}
+
+.contenedor p{
+    font-weight: bold;
+}
+
+.navbar-main{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.navbar-main li{
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4 all ease;
+}
+
+.navbar-main li:hover{
+    color: #cdcdcd;
+    transition: 0.4s all ease;
+}
+
+.navbar-main li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.navbar{
+    display: none;
+}
+
+/* .navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 45px;
+}
+/* .logo{
+    width: 50px;
+    cursor: pointer;
+} 
+
+.navbar li{
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4 all ease;
+}
+
+.navbar li:hover{
+    color: #cdcdcd;
+    transition: 0.4s all ease;
+}
+
+.navbar li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+} */
+
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left ;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.fila{
+    display: flex;
+    height: 88%;
+    width: 81%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.col{
+    flex-basis: 60%;
+    margin-top: 70px;
+}
+
+h1{
+    color: #fff;
+    font-size: 100px;
+    font-family: 'poppins';
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+h5{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 5px #999;
+}
+
+
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+/* button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0 ;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+} */
+
+.card{
+    width: 320px;
+    height: 320px; 
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    font-weight:bold;
+    object-fit: contain;
+    font-size: xx-large;
+}
+
+
+
+.card1{
+    background-image: url('img/akira-hojo-_86u_Y0oAaM-unsplash.jpg');
+}
+
+.card2{
+    background-image: url('img/akira-hojo-_86u_Y0oAaM-unsplash.jpg');
+}
+
+.card3{
+    animation: panel1 28s infinite linear;
+}
+
+.card4{
+    animation: panel2 28s infinite linear;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1%;
+    height: 1%;
+    transition: .4s all;
+    position:fixed;
+    z-index: 1;
+    margin-left: 5px; /* Aqui se puso un poco más porque afectaba a las demás páginas*/
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    padding-top: 24px;
+}
+
+.menu ul{
+    padding: 0px;
+    text-align: center;
+    font-size: 0px;
+}
+
+.menu li{
+    transition: .3s all;
+    list-style: none;
+    font-size: 0px;
+    padding: 0px;
+}
+
+.menu a{
+    text-decoration: none;
+    list-style: none;
+    transition: .3s all;
+    font-size: 0px;
+    padding: 0px;
+}
+
+.menu h2{
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 0px;
+}
+
+.menu:hover{
+    width: 70%;
+    height: 100%;
+    background-color: #0a141d;
+}
+
+.menu:hover h2{
+    padding: 15px;
+    font-size: 35px;
+}
+
+.menu:hover a{
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.menu:hover img{
+    height: 0px;
+}
+
+.menu:hover li{
+    border-top: 1px solid rgb(114, 104, 104);
+    width: 100%;
+}
+.menu:hover ul:last-of-type{
+    border-bottom: 1px solid rgb(114, 104, 104); 
+}
+.menu:hover a:hover{
+    font-size: 25px;
+    padding: 30px 0px;
+    background-color: rgba(22,78,112,0.98);
+}
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0,0,0.05);
+}
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-heading span{
+    color: #f33c3c;
+
+}
+.blog-heading h3{
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    
+}
+
+.blog-box{
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    margin: 20px;
+    transition: transform 0.75s ease-in-out;
+}
+
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.ocultar{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+.blog-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+.blog-text .blog-title:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+.blog-text p{
+    color: #9b9b9b;
+    margin: 20px 0px;
+}
+.blog-text button{
+    color: #0f0f0f;
+}
+.blog-text button:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}/*Termina Guillermo y comienza Marcos*/
+
+.ayuda{
+    max-width: 800px;
+    height: auto;
+    margin: 200px auto 100px auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+.ayuda h2{
+    padding-bottom: 1rem;
+}
+
+.ayuda h3{
+    padding-bottom: 1rem;
+}
+
+.ayuda p{
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#FAQ{
+    max-width: 800px;
+    height: auto;
+    margin: 200px auto 200px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq{
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px;
+    border-color: #000;
+}
+
+.faq p{
+    margin-top: 10px;
+    color: #000;
+    font-size: 16px;
+}/*Termina Marcos y comienza Geovanny*/
+
+#Container-eventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+    background-color: rgb(44, 130, 243);
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-top: 200px;
+}
+
+.texto{
+    padding: 1rem;
+    width: 60%;
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.texto h2{
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.texto p{
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.imagenC{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenC img{
+    height: 200px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#eventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 2rem auto 5rem auto;
+    padding: 1rem;
+
+}
+
+.Title-card{
+    text-align: center;
+    background-color: #fff;
+    color: #000000;
+    margin-top: 50px;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+}
+
+.card-event{
+    background-color: #fff;
+    margin: 40px;
+    padding: 20px;
+    box-shadow: 0px 8px 8px 0px #000000;
+    transition: transform 0.2s;
+}
+
+.card-event h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card-event p{
+    margin: 10px ;
+    font-size: 14px;
+    text-align: justify;
+    text-wrap: wrap;
+    width:280px;
+    color: #000;
+}
+
+.card-image img{
+    /* width: 100%;
+    height: 100%;
+    object-fit: contain; */
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-event:hover {
+    transform: scale(1.1);
+}
+
+.over-services{
+    margin-top: 190px;
+}
+
+.cont-services{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.service {
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: width 0.5s;
+}
+
+.service h2 {
+    margin-top: 0;
+    color: #000;
+}
+
+.service img{
+    margin: 1rem;
+    border-radius: 30%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+.service img, .service p {
+    padding: 1rem;
+    display: none;
+}
+
+
+.service:hover {
+    width: 100%;
+    background-color: #333;
+}
+
+
+.service:hover img, .service:hover h2, .service:hover p {
+    display:block;
+    justify-content: justify;
+    color: #fff;
+}/*Termina Geovanny y comienza Evany*/
+
+.donaciones{
+    margin-top: 150px;
+    background-color: #ffffff;
+}
+.donaciones p{
+    color: black;
+}
+.form-donaciones{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+#main{
+    min-height: calc(100vh - 90px);
+    padding: 0.5rem;
+    margin-top: 150px;
+}
+
+.contenido {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.contenido p{
+    color:#000;
+    margin: 1rem;
+    font-size: 16px;
+}
+
+.contenido form {
+    display: grid;
+    gap: 15px;
+}
+
+.contenido label {
+    display: block;
+    font-weight: bold;
+}
+
+.contenido input,textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contenido button {
+    background-color:#727171;
+    color: white;
+    padding: 5px 6px;
+    border: none;
+    cursor: pointer;
+}/*Termina Evany y comienza Génesis*/
+
+.card-donaciones h2{
+    text-align: center;
+    box-shadow: 3px 5px 5px blueviolet;
+    
+}
+.donaciones img{
+    width: 100%;
+    padding: 1rem;
+}
+.card-donaciones label{
+    display: block;
+    font-weight: bold;
+     width: 100%;
+
+}
+.card-donaciones input{
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    background-color: #d7e0f3;
+  
+}
+.card-donaciones button{
+    width: 100%;
+    background-color: rgb(47, 255, 75);
+}
+.donaciones{
+    margin-top: 150px;
+    background-color: #d7e0f3;
+    width: 100%;
+    height: 70%;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+  
+}
+.card-donaciones-p{
+    margin: 20px 0;
+    padding: 20px 20px;
+}
+.donaciones p{
+    color: black;
+    text-align: justify;
+    font-size: 16px;
+    padding: 1rem;
+    margin: 1px;
+}
+.form-donaciones{
+    margin-top: 20px 0;
+    margin-bottom: 50px;
+    
+    margin: 20px 0;
+    padding: 20px 20px;
+   
+}
+.card-donaciones{
+    margin: 20px ;
+    padding: 20px 20px;
+    background-color: #d7e0f3;
+}
+
+
+
+div .donaciones h3{
+    text-align: center;
+    box-shadow: 3px 5px 5px rgb(162, 128, 240);
+}
+
+.card-ga img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+
+}
+.card-ga{
+    width: 330px;
+    height: 95%;
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 3px 5px 5px lightcoral;
+    flex: 0 0 calc(24%-1rem);
+    border: solid 1px;
+    margin: 1rem;
+    
+}
+
+.card-container-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem auto;
+}
+
+.card-ga:hover{
+transform: rotate(-3deg);
+}
+
+.card-ga p{
+    text-align: justify;
+}
+.card-ga h2{
+   text-align: center; 
+}
+
+.card-container-galeria p{
+    color: #000;
+    padding: 0.5rem;
+    font-size: 16px;
+    text-align:justify;
+}
+
+.hero-panel{
+   
+    border: 1px solid #333;
+    margin-left: -8px;
+    margin-right: -8px;
+    text-align: center;
+}
+
+.hero-panel img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+/*Footer general*/
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+    margin-left: 22px;
+}
+.pie-pagina .grupo-1 .red-social img {
+    width: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
+    height: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
+    object-fit: cover; /* Ajustar el tamaño de la imagen manteniendo su proporción */
+    border-radius: 50%; /* Hacer que la imagen sea circular */
+    margin-left: 0px;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+ @keyframes panel1{
+	0%{
+		background-image: url('../ProyectoFinal/img/misionera.png');
+	}
+	25%{
+		background-image: url('../ProyectoFinal/img/misionera.png');
+	}
+
+
+	26%{
+		background-image: url('../ProyectoFinal/img/Sin\ título.png');
+	}
+	50%{
+		background-image: url('../ProyectoFinal/img/Sin\ título.png');
+	}
+
+
+	51%{
+		background-image: url('../ProyectoFinal/img/padre.png');
+	}
+	75%{
+		background-image: url('../ProyectoFinal/img/padre.png');
+	}
+	
+
+	76%{
+		background-image: url('img/sincerely-media-dGxOgeXAXm8-unsplash.jpg');
+	}
+	100%{
+		background-image: url('img/sincerely-media-dGxOgeXAXm8-unsplash.jpg');
+	}
+} 
+
+@keyframes panel2{
+	0%{
+		background-image: url('../ProyectoFinal/img/misionera.png');
+	}
+	25%{
+		background-image: url('../ProyectoFinal/img/misionera.png');
+	}
+
+
+	26%{
+		background-image: url('../ProyectoFinal/img/Sin\ título.png');
+	}
+	50%{
+		background-image: url('../ProyectoFinal/img/Sin\ título.png');
+	}
+
+
+	51%{
+		background-image: url('../ProyectoFinal/img/petencostes.png');
+	}
+	75%{
+		background-image: url('../ProyectoFinal/img/petencostes.png');
+	}
+	
+
+	76%{
+		background-image: url('../ProyectoFinal/img/evento4.png');
+	}
+	100%{
+		background-image: url('../ProyectoFinal/img/evento4.png');
+	}
+}
+
+@media (min-width:720px) {
+
+    .navbar{
+        display: none;
+    }
+}
+
+@media (min-width: 1025px){
+
+    .navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 45px;
+    }
+
+    .navbar li{
+        display: inline-block;
+        position: relative;
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.4 all ease;
+    }
+
+    .navbar li:hover{
+        color: #cdcdcd;
+        transition: 0.4s all ease;
+    }
+
+    .navbar li::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #0051ff;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+    }
+    
+    li:hover::after{
+        transform: scaleX(1);
+        transform-origin: bottom left ;
+    }
+    
+    
+    nav{
+        flex: 1;
+        text-align: right;
+    }
+    
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+    }
+}
